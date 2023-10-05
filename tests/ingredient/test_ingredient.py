@@ -31,6 +31,3 @@ def test_ingredient():
     assert hash(ingredient_1) != hash(ingredient_2)
     assert hash(ingredient_2) != hash(ingredient_3)
     assert hash(ingredient_3) != hash(ingredient_1)
-
-
-
