@@ -29,10 +29,8 @@ class InventoryMapping:
     def check_recipe_availability(self, recipe: Recipe) -> bool:
         try:
             return all(
-                [
                     self.inventory[ingredient] >= recipe[ingredient]
                     for ingredient in recipe.keys()
-                ]
             )
         except KeyError:
             return False
