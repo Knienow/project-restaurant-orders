@@ -2,11 +2,12 @@ from models.dish import Dish
 from models.ingredient import Ingredient
 import csv
 
+
 # Req 3
 class MenuData:
     def __init__(self, source_path: str) -> None:
         self.dishes = set()
-        
+
         with open(source_path, encoding="utf-8", mode="r") as file:
             reader = csv.DictReader(file, delimiter=",", quotechar='"')
             dishes = {}
@@ -24,4 +25,3 @@ class MenuData:
                 )
 
         self.dishes = dishes.values()
-

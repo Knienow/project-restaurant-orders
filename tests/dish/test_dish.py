@@ -12,8 +12,6 @@ def test_dish():
     ingredient_5 = Ingredient("salmão")
     ingredient_6 = Ingredient("manteiga")
 
-
-
     plate_1 = Dish("Ravioli com molho de queijos", 39.99)
     plate_2 = Dish("Salmão na manteiga", 37.99)
 
@@ -59,7 +57,6 @@ def test_dish():
     plate_1.add_ingredient_dependency(ingredient_2, 1)
     plate_1.add_ingredient_dependency(ingredient_3, 15)
     plate_1.add_ingredient_dependency(ingredient_4, 1)
-
 
     assert ingredient_1 in plate_1.recipe
     assert ingredient_2 in plate_1.recipe
